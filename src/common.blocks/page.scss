@@ -1,0 +1,16 @@
+@use "variables" as *;
+
+html, body.page {
+	height: 100%;
+	font-family: $font;
+	font-size: $baseFontSize;
+	color: $baseFontColor;
+	background: $background;
+}
+.page__wrapper {
+	width: 100%;
+
+}
+body:has(.page__wrapper_locked) {
+	overflow: hidden;
+}
